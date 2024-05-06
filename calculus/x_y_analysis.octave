@@ -1,0 +1,27 @@
+% Differetiation
+>> syms x; % Define x as a symbolic variable
+
+% Define the function y
+y = x^2 + 3*x;
+
+% Differentiate y with respect to x
+dy_dx = diff(y, x);
+
+% Display the result
+disp('Differentiation of y = x^2 + 3x with respect to x:');
+disp(dy_dx);
+Differentiation of y = x^2 + 3x with respect to x:
+  2⋅x + 3
+
+% Integration
+>> syms x; % Define x as a symbolic variable
+Symbolic pkg v3.1.1: Python communication link active, SymPy v1.12.
+>>
+>>
+>> y = sin(2*x);
+>>
+>> integral_y = int(y, x);
+>> disp(integral_y);
+  -cos(2⋅x)
+  ──────────
+      2
