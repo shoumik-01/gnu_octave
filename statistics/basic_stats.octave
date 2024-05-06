@@ -1,0 +1,39 @@
+>> % Define the sequence of integers
+data = [78, 79, 69, 70, 75.5, 68, 67.5];
+
+% 1. Sample standard deviation
+sample_std_dev = std(data, 0);
+
+% 2. Population standard deviation
+population_std_dev = std(data, 1);
+
+% 3. Mean and median
+mean_value = mean(data);
+median_value = median(data);
+
+% 4. Interquartile range (IQR)
+q1 = prctile(data, 25);
+q3 = prctile(data, 75);
+iqr_value = q3 - q1;
+
+% Display the results
+disp('Sample Standard Deviation:');
+disp(sample_std_dev);
+disp('Population Standard Deviation:');
+disp(population_std_dev);
+disp('Mean:');
+disp(mean_value);
+disp('Median:');
+disp(median_value);
+disp('Interquartile Range (IQR):');
+disp(iqr_value);
+Sample Standard Deviation:
+4.9196
+Population Standard Deviation:
+4.5547
+Mean:
+72.429
+Median:
+70
+Interquartile Range (IQR):
+9.1250
